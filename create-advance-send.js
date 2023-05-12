@@ -1,7 +1,7 @@
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'localhost:9000/api/create-advance',
+  'url': '10.1.1.84:9000/api/create-advance',
   'headers': {
     'Content-Type': 'application/x-www-form-urlencoded'
   },
