@@ -94,10 +94,10 @@ app.post('/api/create-advance', function (req, res) {
    };
 
    request(options, function (error, response) {
-      const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
-      logFile.write(response);
-      logFile.write(error);
-      logFile.end();
+      // const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
+      // logFile.write(response);
+      // logFile.write(error);
+      // logFile.end();
 
       if (error) {
          console.error(error);
@@ -172,10 +172,10 @@ app.post('/api/cclr-advance', function(req, res) {
    };
  
    request(options, function (error, response) {
-      const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
-      logFile.write(response);
-      logFile.write(error);
-      logFile.end();
+      // const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
+      // logFile.write(response);
+      // logFile.write(error);
+      // logFile.end();
      if (error) {
        console.error(error);
        res.status(500).send({ error: 'Internal Server Error' });
@@ -305,10 +305,10 @@ const options = {
  };
 
  request(options, function (error, response) {
-   const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
-   logFile.write(response);
-   logFile.write(error);
-   logFile.end();
+   // const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
+   // logFile.write(response);
+   // logFile.write(error);
+   // logFile.end();
    if (error) {
      console.error(error);
      res.status(500).send({ error: 'Internal Server Error' });
@@ -382,10 +382,10 @@ app.post('/api/create-cclr-ees', function(req, res) {
    };
  
    request(options, function (error, response, body) {
-      const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
-      logFile.write(response);
-      logFile.write(error);
-      logFile.end();
+      // const logFile = fs.createWriteStream('log.txt', { flags: 'a' });
+      // logFile.write(response);
+      // logFile.write(error);
+      // logFile.end();
      if (error) throw new Error(error);
  
      const xmlResponse = body;
